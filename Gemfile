@@ -44,7 +44,6 @@ group :test do
   gem 'capybara'
   gem 'rspec-collection_matchers'
   gem 'rspec-rails'
-  gem 'selenium-webdriver'
   gem 'shoulda-matchers'
 end
 
