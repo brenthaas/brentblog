@@ -1,27 +1,34 @@
 @media print {
-  #resume { margin-top: -15; }
-  #version { display: none;}
-  a[href]:after{
+  #resume {
+    margin-top: -15;
+  }
+  #version {
+    display: none;
+  }
+  a[href]:after {
     content: "";
   }
 }
 
-@media screen{
-  #resume { margin: 50px auto 64px; }
+@media screen {
+  #resume {
+    margin: 50px auto 64px;
+  }
 }
 
 #resume {
   clear: both;
   width: 850px;
-  *{margin:0;}
+  * {
+    margin: 0;
+  }
 
-  #version{
+  #version {
     font: 0.75em Georgia, Serif;
     position: fixed;
     right: 0;
     bottom: 0;
   }
-
 
   dd.clear {
     float: none;
@@ -33,7 +40,7 @@
     float: right;
     margin: 70px 10px;
   }
-  #name{
+  #name {
     margin-bottom: 10px;
     padding-left: 25px;
     font-size: 3em;
@@ -44,7 +51,9 @@
   #contact-info {
     margin-bottom: 10px;
     line-height: 1em;
-    p { margin-bottom: 10px;}
+    p {
+      margin-bottom: 10px;
+    }
     float: left;
   }
   .contact-detail {
@@ -108,7 +117,7 @@
     bottom: 0;
     right: 120px;
   }
-  .title  {
+  .title {
     font-style: italic;
     font-weight: normal;
     margin: 0 10px;
