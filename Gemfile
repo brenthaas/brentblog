@@ -42,7 +42,7 @@ group :development, :test do
 end
 
 group :test do
-  gem 'capybara'
+  # gem 'capybara' # don't currently need and has a vuln
   gem 'rspec-collection_matchers'
   gem 'rspec-rails'
   gem 'shoulda-matchers'
