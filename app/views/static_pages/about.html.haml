@@ -1,136 +1,144 @@
 #resume
   #version v5.3
-  .vcard
 
   #contact-info
-    %p#name.fn Brent Haas
-    %hr
-    %p
-      %span.adr
-        %span.locality San Francisco,
-        %span.region CA
-    %p
-      %span.tel 408-372-7473
-    %p
-      %a.email{:href => "mailto:brenthaas+resume@gmail.com"} brenthaas@gmail.com
-    %p
-      %a.url{:href => "https://github.com/brenthaas?tab=repositories"} github.com/brenthaas
+    .contact-heading
+      .heading-name Brent Haas
+    .contact-details
+      #location.detail
+        %span.city San Francisco,
+        %span.state CA
+      %span.tel.detail 408-372-7473
+      %a.email.detail{:href => "mailto:brenthaas+resume@gmail.com"} brenthaas@gmail.com
+      %a.url.detail{:href => "https://github.com/brenthaas?tab=repositories"} github.com/brenthaas
 
-  #objective.summary
+  .main-body
+    .card
+      .card-heading
+        .heading-content Skills
+      .entries
+        .entry
+          .entry-heading
+            %span.primary-heading Languages, Frameworks, and Methodologies
+          %ul.content.skill-list
+            %li.skill Agile,
+            %li.skill TDD,
+            %li.skill Ruby,
+            %li.skill Ruby on Rails,
+            %li.skill RSpec,
+            %li.skill RabbitMQ,
+            %li.skill Javascript,
+            %li.skill React,
+            %li.skill CSS,
+            %li.skill HTML,
+            %li.skill SQL
+    .card
+      .card-heading
+        .heading-content Experience
+      .entries
+        .entry
+          .entry-heading
+            %span.primary-heading Bugcrowd
+            %span.secondary-heading Software Engineer
+            %span.heading-spacer
+            %span.secondary-heading San Francisco
+            %span.secondary-heading 05/2015 - 09/2019
+          .entry-subheading Full-Stack Web Developer focused on backend software engineering
+          %ul.content.wins
+            %li.win Wrote and reviewed RFC documents explaining architecture and software design approaches
+            %li.win Investigated and resolved security vulnerabilities reported through our platform
+            %li.win Developed features for customers, researchers, and internal stakeholders
+            %li.win Mentored junior engineers and paired with peers to design and develop new features
+            %li.win Developed RESTful APIs for customers and researchers to interact with the platform
+            %li.win Routinely improved and refactored parts of the application to reduce technical debt
+            %li.win Developed best practices and quality of life improvements as part of culture team
 
-  %dl.main-body
-    %dt.section-title Skills
-    %dd.section
-      .entry
-        .entry-head
-          %span.org Languages, Frameworks, and Methodologies
-        %ul.buzz-words
-          %li Agile,
-          %li TDD,
-          %li Ruby,
-          %li Ruby on Rails,
-          %li RSpec,
-          %li RabbitMQ,
-          %li Javascript,
-          %li React,
-          %li CSS,
-          %li HTML,
-          %li SQL
-    %dt.section-title Experience
-    %dd.section
-      .entry
-        .entry-head
-          %span.org Bugcrowd
-          %span.title Software Engineer
-          %span.location San Francisco
-          %span.date 05/2015 - 09/2019
-        .job_role Full-Stack Web Developer focused on backend software engineering
-        %ul.wins
-          %li.win Wrote and reviewed RFC documents explaining architecture and software design approaches
-          %li.win Investigated and resolved security vulnerabilities reported through our platform
-          %li.win Developed features for customers, researchers, and internal stakeholders
-          %li.win Mentored junior engineers and paired with peers to design and develop new features
-          %li.win Developed RESTful APIs for customers and researchers to interact with the platform
-          %li.win Routinely improved and refactored parts of the application to reduce technical debt
-          %li.win Developed best practices and quality of life improvements as part of culture team
+        .entry
+          .entry-heading
+            %span.primary-heading Yerdle
+            %span.secondary-heading Rails Developer
+            %span.heading-spacer
+            %span.secondary-heading San Francisco
+            %span.secondary-heading 10/2014 - 04/2015
+          .entry-subheading Server-side Rails Developer
+          %ul.content.wins
+            %li.win
+              Designed invoicing and credit accounting system to improve
+              security and auditing
+            %li.win
+              Re-architected core data model to better adapt to business rules and
+              reduce coupling
 
-      .entry
-        .entry-head
-          %span.org Yerdle
-          %span.title Rails Developer
-          %span.location San Francisco
-          %span.date 10/2014 - 04/2015
-        .job_role Server-side Rails Developer
-        %ul.wins
-          %li.win
-            Designed invoicing and credit accounting system to improve
-            security and auditing
-          %li.win
-            Re-architected core data model to better adapt to business rules and
-            reduce coupling
+        .entry
+          .entry-heading
+            %span.primary-heading CrowdFlower
+            %span.secondary-heading Web Developer
+            %span.heading-spacer
+            %span.secondary-heading San Francisco
+            %span.secondary-heading 02/2014 - 08/2014
+          .entry-subheading Full-Stack Web Developer in Customer Engineering
+          %ul.content.wins
+            %li.win
+              Developed new features to run on current legacy system and upcoming
+              modernized Rails app
+            %li.win
+              Enabled customers to manage large crowd-sourced micro-tasks by
+              developing monitoring and management tools
 
-      .entry
-        .entry-head
-          %span.org CrowdFlower
-          %span.title Web Developer
-          %span.location San Francisco
-          %span.date 02/2014 - 08/2014
-        .job_role Full-Stack Web Developer in Customer Engineering
-        %ul.wins
-          %li.win
-            Developed new features to run on current legacy system and upcoming
-            modernized Rails app
-          %li.win
-            Enabled customers to manage large crowd-sourced micro-tasks by
-            developing monitoring and management tools
+        .entry
+          .entry-heading
+            %span.primary-heading ThredUp
+            %span.secondary-heading Web Developer
+            %span.heading-spacer
+            %span.secondary-heading San Francisco
+            %span.secondary-heading 01/2013 - 11/2013
+          .entry-subheading Full-Stack Web Developer in Warehouse Operations
+          %ul.content.wins
+            %li.win
+              Lead developer for Backbone application used to reduce shipping
+              and receiving errors, track defects and increase order turnaround
+            %li.win
+              Built solutions for hardware and scalability issues identified in
+              warehouse operations
 
-      .entry
-        .entry-head
-          %span.org ThredUp
-          %span.title Web Developer
-          %span.location San Francisco
-          %span.date 01/2013 - 11/2013
-        .job_role Full-Stack Web Developer in Warehouse Operations
-        %ul.wins
-          %li.win
-            Lead developer for Backbone application used to reduce shipping
-            and receiving errors, track defects and increase order turnaround
-          %li.win
-            Built solutions for hardware and scalability issues identified in
-            warehouse operations
+        .entry
+          .entry-heading
+            %span.primary-heading Yahoo!
+            %span.secondary-heading Tools Developer / Operations Lead
+            %span.heading-spacer
+            %span.secondary-heading Sunnyvale, CA
+            %span.secondary-heading 06/2005 - 02/2010
+          .-entry-subheading Technical lead and tools developer for a large-scale, globally distributed user database
+          %ul.content.wins
+            %li.win Designed and deployed the back-end database for Yahoo!’s Open Social services
+            %li.win Provided 24x7 / 15 min. operational support for mission-critical systems with 99.999% uptime
+            %li.win As Technical Lead, trained highly skilled US and Indian operations teams
 
-      .entry
-        .entry-head
-          %span.org Yahoo!
-          %span.title Tools Developer / Operations Lead
-          %span.location Sunnyvale, CA
-          %span.date 06/2005 - 02/2010
-        .job-role Technical lead and tools developer for a large-scale, globally distributed user database
-        %ul.wins
-          %li.win Designed and deployed the back-end database for Yahoo!’s Open Social services
-          %li.win Provided 24x7 / 15 min. operational support for mission-critical systems with 99.999% uptime
-          %li.win As Technical Lead, trained highly skilled US and Indian operations teams
-
-    %dt.section-title Education
-    %dd.section
-      .entry
-        .entry-head
-          %span.org University of Arizona
-          %span.location Tucson, AZ
-          %span.date June 2002
-        %span.wins
-          %p.win Received Bachelors of Science, Computer Science
+    .card
+      .card-heading
+        .card-content Education
+      .entries
+        .entry
+          .entry-heading
+            %span.primary-heading--2 University of Arizona
+            %span.heading-spacer
+            %span.secondary-heading Tucson, AZ
+            %span.secondary-heading June 2002
+          %span.wins
+            %p.win Received Bachelors of Science, Computer Science
 
 
-    %dt.section-title Accomplishments
-    %dd.section
-      .entry
-        %ul.wins
-          %li.win Winner of four Bugcrowd Hackathon awards
-          %li.win Received Yahoo! COO's “Bustin' Tail Pail” award for Excellence in Engineering
-          %li.win Nominated four times for Yahoo! Super Star Award for Excellence
-          %li.win
-            Art Projects:
-            %a.url{:href => "http://flaminglotus.com"} flaminglotus.com ;
-            %a.url{:href => "http://fluxfoundation.org/category/portfolio/"} fluxfoundation.org ;
-            %a.url{:href => "http://charlesgadeken.com/squared"} charlesgadeken.com/squared
+    .card
+      .card-heading
+        .card-content Accomplishments
+      .entries
+        .entry
+          %ul.content.wins
+            %li.win Winner of four Bugcrowd Hackathon awards
+            %li.win Received Yahoo! COO's “Bustin' Tail Pail” award for Excellence in Engineering
+            %li.win Nominated four times for Yahoo! Super Star Award for Excellence
+            %li.win
+              Art Projects:
+              %a.url{:href => "http://flaminglotus.com"} flaminglotus.com ;
+              %a.url{:href => "http://fluxfoundation.org/category/portfolio/"} fluxfoundation.org ;
+              %a.url{:href => "http://charlesgadeken.com/squared"} charlesgadeken.com/squared
